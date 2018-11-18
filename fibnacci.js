@@ -4,4 +4,20 @@ function fib(n){
     else if(n > 2)
         return fib(n-1) + fib(n-2)
 }
-console.log(fib(6));
+
+//dynamic programming
+function fib2(n) {
+    let fib = [];
+    fib[0] = 1;
+    fib[1] = 1;
+    for (var i = 2; i < n; i++) {
+        fib[i] = fib[i-2] + fib[i-1];
+    }
+    return fib[n-1];
+}
+
+console.log(fib2(6));
+
+// for (var i = 0; i < 10; i++) {
+//     console.log(fib2(i));  
+// }

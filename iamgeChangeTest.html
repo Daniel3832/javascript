@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>JavaScript Example</title>
+</head>
+<body>
+	<h1>JavaScript Example</h1>
+	<p>
+	hello
+        <img alt="" src="http://www.clker.com/cliparts/3/m/v/Y/E/V/small-red-apple-hi.png" 
+            style="height: 85px; width: 198px" id="imgClickAndChange" onclick="changeImage()"  />
+	</p>
+	
+<script language="javascript">
+    function changeImage() {
+
+        if (document.getElementById("imgClickAndChange").src == "http://www.clker.com/cliparts/3/m/v/Y/E/V/small-red-apple-hi.png") 
+        {
+            document.getElementById("imgClickAndChange").src = "http://www.userinterfaceicons.com/80x80/maximize.png";
+        }
+        else 
+        {
+            document.getElementById("imgClickAndChange").src = "http://www.clker.com/cliparts/3/m/v/Y/E/V/small-red-apple-hi.png";
+        }
+    }
+</script>	
+</body>
+</html>
+
